@@ -95,19 +95,34 @@
         git reset --hard [commit hash] // throghs git log
         git reset --soft [commit hash] // throws git log
         git reset --mixed [commit hash] // throws git log
+        
+        git reset --hard HEAD~1 // throws git log
         git reset HEAD~1
 
         git revert [commit hash] // throws git log
         
         git stash
+        git stash drop 1
+        git stash clear
         git stash pop
 
         git clone [url] [folder name]
 
 
         git fetch
-     
         
+        git cherry-pick [commit hash]
+        git commit -m "message" && git push
+
+
+        git .gitignore
+
+        git commit -m "add style.css file in .gitignore"
+
+        git restore --staged style.css
+
+
+
     </h1>
 </body>
 </html>
